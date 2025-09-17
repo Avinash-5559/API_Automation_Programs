@@ -1,10 +1,10 @@
 # API Automation Programs 🚀
 
-This repository contains various API testing resources to learn and master **REST API automation** using **Rest Assured** in Java, along with **TestNG**, **Allure Reports**, and **Apache POI** for data-driven testing.
+This repository contains various API testing resources to learn and master **REST API Automation** using **Rest Assured** in Java, along with **TestNG**, **Allure Reports**, and **Apache POI** for data-driven testing.
 
 ---
 
-## 📚 What Will You Learn
+## 📚 Lessons Yet to Be Learned
 
 This repository covers hands-on implementation of:
 
