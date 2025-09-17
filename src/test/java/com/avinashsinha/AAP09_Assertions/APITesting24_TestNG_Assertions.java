@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP9_Assertions;
+package com.avinashsinha.AAP09_Assertions;
 
 /*
     Assertions are statements used in testing to verify that the actual result of an operation matches with expected result.

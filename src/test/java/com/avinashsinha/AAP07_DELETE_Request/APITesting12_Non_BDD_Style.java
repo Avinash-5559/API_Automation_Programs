@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP7_DELETE_Request;
+package com.avinashsinha.AAP07_DELETE_Request;
 
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;

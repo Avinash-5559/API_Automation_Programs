@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP8_testNG_Examples;
+package com.avinashsinha.AAP08_testNG_Examples;
 
 /*
     @Test: This annotation marks the actual test method that will be executed.

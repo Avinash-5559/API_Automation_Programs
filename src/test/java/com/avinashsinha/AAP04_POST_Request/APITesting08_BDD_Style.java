@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP4_POST_Request;
+package com.avinashsinha.AAP04_POST_Request;
 
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;

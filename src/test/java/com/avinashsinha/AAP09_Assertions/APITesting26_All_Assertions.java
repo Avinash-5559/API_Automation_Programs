@@ -1,25 +1,18 @@
-package com.avinashsinha.AAP9_Assertions;
-
-/*
-    Assertions are statements used in testing to verify that the actual result of an operation matches with expected result.
-    This means that if an assertion fails, it indicates a defect, and the test is marked as failed.
-
-    Assertion by AssertJ : It provides a rich set of fluent and readable assertions.
-                           This means that you can write assertions that are both powerful and easy to read.
-                           If the assertion fails, AssertJ gives clear and detailed error messages,
-                           helping you quickly understand what went wrong.
-*/
+package com.avinashsinha.AAP09_Assertions;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import org.hamcrest.Matchers;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class APITesting25_AssertJ_Assertions {
+public class APITesting26_All_Assertions {
 
     RequestSpecification requestSpecification;
     Response response;
@@ -54,9 +47,33 @@ public class APITesting25_AssertJ_Assertions {
         String firstname = response.then().extract().path("booking.firstname");
         String lastname = response.then().extract().path("booking.lastname");
 
-        assertThat(bookingId).isNotNull().isNotZero().isNotNegative();
+//----------------------------------- Assertions by Rest Assured -----------------------------------
+
+        validatableResponse.body("bookingid", Matchers.notNullValue());
+        validatableResponse.body("booking.firstname", Matchers.equalTo("Pramod"));
+        validatableResponse.body("booking.lastname", Matchers.equalTo("Dutta"));
+
+//----------------------------------- Assertions by TestNG -----------------------------------
+
+        // Hard Assertion
+
+        Assert.assertNotNull(bookingId);
+        Assert.assertEquals(firstname, "Pramod");
+        Assert.assertEquals(lastname, "Dutta");
+
+        // Soft Assertion
+
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertNotNull(bookingId);
+        softAssert.assertEquals(firstname, "Pramod");
+        softAssert.assertEquals(lastname, "Dutta");
+        softAssert.assertAll();
+
+
+//----------------------------------- Assertions by AssertJ -----------------------------------
+
+        assertThat(bookingId).isNotNull().isNotZero().isPositive();
         assertThat(firstname).isEqualTo("Pramod").isNotNull().isNotBlank().isNotEmpty();
         assertThat(lastname).isEqualTo("Dutta").isNotNull().isNotBlank().isNotEmpty();
-
     }
 }

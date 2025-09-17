@@ -1,22 +1,23 @@
-package com.avinashsinha.AAP8_testNG_Examples;
+package com.avinashsinha.AAP08_testNG_Examples;
 
 /*
     @Test: This annotation marks the actual test method that will be executed.
 
-    enabled : Whether methods on this class/method are enabled.
+    alwaysRun : The alwaysRun attribute in TestNG annotations, when set to true,
+                ensures that a method will be executed regardless of the status of its dependencies.
 */
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class APITesting18_Enabled {
+public class APITesting19_AlwaysRun {
 
-    @Test
+    @Test(enabled = false)
     public void test01() {
         Assert.assertTrue(true);
     }
 
-    @Test(enabled = false)
+    @Test(alwaysRun = true)
     public void test02() {
         Assert.assertTrue(true);
     }

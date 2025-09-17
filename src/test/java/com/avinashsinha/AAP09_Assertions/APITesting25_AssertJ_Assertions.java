@@ -1,21 +1,25 @@
-package com.avinashsinha.AAP9_Assertions;
+package com.avinashsinha.AAP09_Assertions;
 
 /*
     Assertions are statements used in testing to verify that the actual result of an operation matches with expected result.
     This means that if an assertion fails, it indicates a defect, and the test is marked as failed.
 
-    Assertion by Rest Assured : This means that if the assertion fails, the test will stop at that point,
-                                and the remaining validations in that chain will not be executed.
+    Assertion by AssertJ : It provides a rich set of fluent and readable assertions.
+                           This means that you can write assertions that are both powerful and easy to read.
+                           If the assertion fails, AssertJ gives clear and detailed error messages,
+                           helping you quickly understand what went wrong.
 */
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
-import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
-public class APITesting23_RestAssured_Assertions {
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class APITesting25_AssertJ_Assertions {
 
     RequestSpecification requestSpecification;
     Response response;
@@ -46,12 +50,13 @@ public class APITesting23_RestAssured_Assertions {
 
         validatableResponse = response.then().log().all().statusCode(200);
 
-//----------------------------------- Assertions by Rest Assured -----------------------------------
+        Integer bookingId = response.then().extract().path("bookingid");
+        String firstname = response.then().extract().path("booking.firstname");
+        String lastname = response.then().extract().path("booking.lastname");
 
-        validatableResponse.body("booking.firstname", Matchers.equalTo("Pramod"));
-        validatableResponse.body("booking.lastname", Matchers.equalTo("Dutta"));
-        validatableResponse.body("booking.depositpaid", Matchers.equalTo(false));
-        validatableResponse.body("bookingid", Matchers.notNullValue());
+        assertThat(bookingId).isNotNull().isNotZero().isNotNegative();
+        assertThat(firstname).isEqualTo("Pramod").isNotNull().isNotBlank().isNotEmpty();
+        assertThat(lastname).isEqualTo("Dutta").isNotNull().isNotBlank().isNotEmpty();
 
     }
 }

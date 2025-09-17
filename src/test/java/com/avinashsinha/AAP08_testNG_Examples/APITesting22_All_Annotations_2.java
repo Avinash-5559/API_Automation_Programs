@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP8_testNG_Examples;
+package com.avinashsinha.AAP08_testNG_Examples;
 
 /*
    @BeforeSuite     : It will run only once, before all tests in the suite are executed.
@@ -22,16 +22,16 @@ package com.avinashsinha.AAP8_testNG_Examples;
 
 import org.testng.annotations.*;
 
-public class APITesting21_All_Annotations_1 {
+public class APITesting22_All_Annotations_2 {
 
     @BeforeSuite
     void demo1() {
-        System.out.println("BeforeSuite");
+        System.out.println("Read the data from the MySQL");
     }
 
     @BeforeTest
     void demo2() {
-        System.out.println("BeforeTest");
+        System.out.println("Data in Matrix, TC Before");
     }
 
     @BeforeClass
@@ -67,5 +67,6 @@ public class APITesting21_All_Annotations_1 {
     @AfterSuite
     void demo9() {
         System.out.println("AfterSuite");
+        System.out.println("Close everything, Delete all the temp files");
     }
 }

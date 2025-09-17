@@ -1,4 +1,4 @@
-package com.avinashsinha.AAP8_testNG_Examples;
+package com.avinashsinha.AAP08_testNG_Examples;
 
 /*
     TestNG Annotations are special tags used in your test code to control which parts of the code should run during testing.
