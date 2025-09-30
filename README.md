@@ -51,7 +51,7 @@ It demonstrates how to structure test automation projects using **TestNG**, gene
 
 ---
 
-## 📁 Project Structure  
+## 🏗️ Project Structure  
 
 ```bash
 API-Automation-Programs
