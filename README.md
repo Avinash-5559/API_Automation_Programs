@@ -76,3 +76,7 @@ Here’s an example of an Allure test report generated from this project:
 mvn clean test
 mvn allure:serve
 ```
+---
+📝 This repository is created exclusively for **educational and practice use**.
+
+---
