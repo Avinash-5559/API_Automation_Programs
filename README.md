@@ -77,6 +77,8 @@ Here’s an example of an Allure test report generated from this project:
 mvn clean test
 mvn allure:serve
 ```
+<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/3a0cabbf-2998-41a5-b275-1c9f65dab3bb" />
+
 ## 📌 Author
 👤 Avinash Sinha
 
