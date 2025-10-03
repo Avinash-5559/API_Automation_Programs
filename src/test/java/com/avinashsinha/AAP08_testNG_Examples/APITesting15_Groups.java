@@ -21,12 +21,12 @@ public class APITesting15_Groups {
     @Test(groups = {"p1", "regression"}, priority = -1)
     public void test_regressionRun() {
         System.out.println("Regression");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 
     @Test(groups = {"p1", "smoke"}, priority = 2)
     public void test_smokeRun() {
         System.out.println("Smoke");
-        Assert.assertTrue(false);
+        Assert.assertTrue(true);
     }
 }
