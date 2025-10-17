@@ -1,14 +1,14 @@
 # API Automation Programs 🚀  
 
 ![Java](https://img.shields.io/badge/Java-11%2B-blue?logo=openjdk)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-Editor-blue?logo=intellijidea)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-IDE-000000?logo=intellijidea&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white)
 ![Rest Assured](https://img.shields.io/badge/Rest%20Assured-API%20Testing-green)
-![TestNG](https://img.shields.io/badge/TestNG-Testing-orange)
+![TestNG](https://img.shields.io/badge/TestNG-Framework-FF6C37?logo=testng&logoColor=white)
 ![Allure](https://img.shields.io/badge/Allure-Reports-purple)
 ![Apache POI](https://img.shields.io/badge/Apache%20POI-Excel%20Integration-yellow)
 ![Gson](https://img.shields.io/badge/Gson-JSON%20Parser-lightgrey?logo=google)
 ![Jackson](https://img.shields.io/badge/Jackson-JSON%20Parser-blue)
-![Maven](https://img.shields.io/badge/Maven-Build%20Tool-red?logo=apachemaven)
 
 
 ---
