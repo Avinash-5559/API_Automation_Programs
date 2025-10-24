@@ -13,9 +13,10 @@
 
 ---
 
-## 📌 Overview  
+## 🗂️ Overview  
 
 This repository contains **API automation programs** to learn and master **REST API testing with Rest Assured** in **Java**.  
+
 It demonstrates how to structure test automation projects using **TestNG**, generate reports with **Allure**, and implement **data-driven testing** with **Apache POI (Excel)**.  
 
 ---
