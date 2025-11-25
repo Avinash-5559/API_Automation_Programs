@@ -56,17 +56,110 @@ It demonstrates how to structure test automation projects using **TestNG**, gene
 ## 🏗️ Project Structure  
 
 ```bash
-API-Automation-Programs
+API_Automation_Programs/
 │
-├── src/test/java/
-│   ├── base/                 # Base test setup
-│   ├── crud/                 # CRUD test cases
-│   ├── utils/                # Utility functions (Excel, Config, JSON, etc.)
-│   └── tests/                # TestNG test classes
+├── .idea/                                                                  # IntelliJ project files
+├── .mvn/                                                                   # Maven wrapper files
+├── allure-report/                                                          # Allure Report HTML (generated)
+├── allure-results/                                                         # Allure results (JSON, attachments, etc.)
 │
-├── testng.xml                # TestNG suite file
-├── pom.xml                   # Maven dependencies
-└── README.md                 # Project documentation
+├── src/
+│   ├── main/
+│   │   └── java/com.avinashsinha/                                          
+│   │
+│   └── test/
+│       └── java/com.avinashsinha/
+│           │
+│           ├── AAP01_RA_Basics/                                            # Rest-Assured Basics
+│           │   ├── APITesting01.java
+│           │   ├── APITesting02.java
+│           │   ├── APITesting03_BuilderDesignPattern.java
+│           │   └── APITesting04_Multiple_TestCases_Problem.java
+│           │
+│           ├── AAP02_RA_TestNG_AllureReport/                               # Rest-Assured + TestNG + Allure
+│           │   └── APITesting04_Multiple_TestCases_Fix.java
+│           │
+│           ├── AAP03_GET_Request/                                          # GET Request Examples
+│           │   ├── APITesting05_BDD_Style.java
+│           │   ├── APITesting06_Non_BDD_Style.java
+│           │   └── APITesting07_GetBookingIds.java
+│           │
+│           ├── AAP04_POST_Request/                                         # POST Request Examples
+│           │   ├── APITesting08_BDD_Style.java
+│           │   └── APITesting09_Non_BDD_Style.java
+│           │
+│           ├── AAP05_PUT_Request/                                          # PUT Request Examples
+│           │   └── APITesting10_Non_BDD_Style.java
+│           │
+│           ├── AAP06_PATCH_Request/                                        # PATCH Request Examples
+│           │   └── APITesting11_Non_BDD_Style.java
+│           │
+│           ├── AAP07_DELETE_Request/                                       # DELETE Request Examples
+│           │   └── APITesting12_Non_BDD_Style.java
+│           │
+│           ├── AAP08_testNG_Examples/                                      # TestNG Concepts
+│           │   ├── APITesting13_AnnotationWithoutPriority.java
+│           │   ├── APITesting14_AnnotationWithPriority.java
+│           │   ├── APITesting15_Groups.java
+│           │   ├── APITesting16_DependsOnMethod.java
+│           │   ├── APITesting17_Parameter.java
+│           │   ├── APITesting18_Enabled.java
+│           │   ├── APITesting19_AlwaysRun.java
+│           │   └── APITesting20_InvocationCount.java
+│           │   ├── APITesting21_All_Annotations_1.java
+│           │   └── APITesting22_All_Annotations_2.java
+│           │
+│           ├── AAP09_Assertions/                                           # Assertions
+│           │   ├── APITesting23_RestAssured_Assertions.java
+│           │   ├── APITesting24_TestNG_Assertions.java
+│           │   ├── APITesting25_AssertJ_Assertions.java
+│           │   └── APITesting26_All_Assertions.java
+│           │
+│           ├── AAP10_PayloadManagement/                                    # Payload Using Map
+│           │   └── APITesting27_Payload_Map.java
+│           │
+│           ├── AAP10_PayloadManagement.ByAl_03/                            # POJO Payload (Approach 3)
+│           │   ├── Booking.java
+│           │   └── BookingDates.java
+│           │
+│           ├── AAP10_PayloadManagement.ByManual_01/                        # POJO Payload (Approach 1)
+│           │   ├── Booking.java
+│           │   └── BookingDates.java
+│           │
+│           ├── AAP10_PayloadManagement.ByTool_02/                          # POJO Payload (Approach 2)
+│           │   ├── Booking.java
+│           │   └── BookingDates.java
+│           │
+│           ├── AAP10_PayloadManagement.Gson/                               # Payload with Gson
+│           │   ├── APITesting28_Gson.java
+│           │   ├── Booking.java
+│           │   ├── BookingDates.java
+│           │   └── BookingResponse.java
+│           │
+│           └── AAP10_PayloadManagement.Jackson/                            # Payload with Jackson
+│               ├── APITesting29_Jackson.java
+│               ├── Booking.java
+│               ├── BookingDates.java
+│               └── BookingResponse.java
+│
+├── testng_*.xml                                                            # All TestNG Suite files
+│   ├── testng_ai.xml
+│   ├── testng_AlwaysRun.xml
+│   ├── testng_APITesting09_Non_BDD_Style.xml
+│   ├── testng_Enabled.xml
+│   ├── testng_Groups_P1.xml
+│   ├── testng_Groups_Regression.xml
+│   ├── testng_Groups_Sanity.xml
+│   ├── testng_manual.xml
+│   ├── testng_Parameter_Chrome.xml
+│   ├── testng_Parameter_Firefox.xml
+│   └── testng_plugin.xml
+│
+├── pom.xml                                                                 # Maven dependencies
+├── .gitignore
+│
+└── README.md
+
 ```
 ---
 ## 📊 Sample Allure Report
