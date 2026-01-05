@@ -10,30 +10,13 @@
 ![Gson](https://img.shields.io/badge/Gson-JSON%20Parser-lightgrey?logo=google)
 ![Jackson](https://img.shields.io/badge/Jackson-JSON%20Parser-blue)
 
-
 ---
 
 ## 🗂️ Overview  
 
-This repository contains **API automation programs** to learn and master **REST API testing with Rest Assured** in **Java**.  
+This repository contains **API automation programs** designed to help you learn and master **REST API testing with Rest Assured** in **Java**.  
 
 It demonstrates how to structure test automation projects using **TestNG**, generate reports with **Allure**, and implement **data-driven testing** with **Apache POI (Excel)**.  
-
----
-
-## 📚 Lessons Covered  
-
-- ✅ Basics of **Rest Assured**  
-- 📡 Performing **CRUD operations**:  
-  - `GET` → Retrieve resources  
-  - `POST` → Create new resources  
-  - `PUT` → Update existing resources  
-  - `PATCH` → Partial update of resources  
-  - `DELETE` → Remove resources  
-- 🧪 Integrating with **TestNG** for test structuring  
-- 📊 Generating detailed test reports using **Allure**  
-- 📂 Implementing **Data-Driven Testing** with **Apache POI**  
-- 🔄 Working with **JSON serialization/deserialization** using **Gson** & **Jackson**  
 
 ---
 
@@ -50,6 +33,22 @@ It demonstrates how to structure test automation projects using **TestNG**, gene
 | **Apache POI**	  | Data-driven testing with Excel files                 |
 | **Gson**	        | JSON parsing and object serialisation                |
 | **Jackson**	      | JSON parsing, data binding, and serialisation        |
+
+---
+
+## 📚 Lessons Covered  
+
+- ✅ Basics of **Rest Assured**  
+- 📡 Performing **CRUD operations**:  
+  - **`GET`** → Retrieve resources  
+  - **`POST`** → Create new resources  
+  - **`PUT`** → Update existing resources  
+  - **`PATCH`** → Partial update of resources  
+  - **`DELETE`** → Remove resources  
+- 🧪 Integrating with **TestNG** for test structuring  
+- 📊 Generating detailed test reports using **Allure**  
+- 📂 Implementing **Data-Driven Testing** with **Apache POI**  
+- 🔄 Working with **JSON serialization/deserialization** using **Gson** & **Jackson**  
 
 ---
 
@@ -167,15 +166,18 @@ API_Automation_Programs/
 Here’s an example of an Allure test report generated from this project:
 
 #### ✅ You can generate your own reports after running tests using:
+
 ```bash
 mvn clean test
 mvn allure:serve
 ```
+
 <img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/3a0cabbf-2998-41a5-b275-1c9f65dab3bb" />
 
 ---
 
 ## 📌 Author
+
 👤 Avinash Sinha
 
 ---
