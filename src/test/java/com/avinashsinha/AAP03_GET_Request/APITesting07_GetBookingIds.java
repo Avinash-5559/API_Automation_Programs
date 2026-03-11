@@ -22,7 +22,7 @@ public class APITesting07_GetBookingIds {
 
         rs = RestAssured.given();
         rs.baseUri("https://restful-booker.herokuapp.com");
-        rs.basePath("/booking/8");
+        rs.basePath("/booking/100");
 
         System.out.println("\n-------------------- Part 2 - Making HTTP Request --------------------\n");
 
