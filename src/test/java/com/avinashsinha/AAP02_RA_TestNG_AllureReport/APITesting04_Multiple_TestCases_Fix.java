@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class APITesting04_Multiple_TestCases_Fix {
 
     @Test
-    @Description("TC#1 Verify that Valid Pincode gives 200 Status Code")
+    @Description("TC#1 Verify that Valid Pin-code gives 200 Status Code")
 
     public void test_Get_Positive_TC1() {
 
@@ -22,7 +22,7 @@ public class APITesting04_Multiple_TestCases_Fix {
     }
 
     @Test
-    @Description("TC#2 Verify that Invalid Pincode gives Error")
+    @Description("TC#2 Verify that Invalid Pin-code gives Error")
 
     public void test_Get_Negative_TC2() {
 
@@ -37,7 +37,7 @@ public class APITesting04_Multiple_TestCases_Fix {
     }
 
     @Test
-    @Description("TC#3 Verify that Invalid Pincode gives Error")
+    @Description("TC#3 Verify that Invalid Pin-code gives Error")
 
     public void test_Get_Negative_TC3() {
 
