@@ -75,5 +75,6 @@ public class APITesting26_All_Assertions {
         assertThat(bookingId).isNotNull().isNotZero().isPositive();
         assertThat(firstname).isEqualTo("Pramod").isNotNull().isNotBlank().isNotEmpty();
         assertThat(lastname).isEqualTo("Dutta").isNotNull().isNotBlank().isNotEmpty();
+
     }
 }
