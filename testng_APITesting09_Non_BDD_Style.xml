@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/HP/Documents/API_Automation_Programs">
+    <test verbose="2" preserve-order="true" name="Post Request Test Suite">
         <classes>
             <class name="com.avinashsinha.AAP04_POST_Request.APITesting09_Non_BDD_Style">
             </class>
