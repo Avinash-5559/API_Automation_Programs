@@ -1,73 +1,172 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.avinashsinha</groupId>
-  <artifactId>API_Automation_Programs</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+    <groupId>com.avinashsinha</groupId>
+    <artifactId>API_Automation_Programs</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <name>API_Automation_Programs</name>
-  <url>http://maven.apache.org</url>
+    <name>API_Automation_Programs</name>
+    <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>25</maven.compiler.release>
+        <suiteXmlFile>testng_ai.xml</suiteXmlFile>
+    </properties>
 
-  <dependencies>
+    <dependencies>
 
-      <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
-      <dependency>
-          <groupId>io.rest-assured</groupId>
-          <artifactId>rest-assured</artifactId>
-          <version>5.5.6</version>
-          <scope>test</scope>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.5.6</version>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-      <dependency>
-          <groupId>org.testng</groupId>
-          <artifactId>testng</artifactId>
-          <version>7.11.0</version>
-          <scope>test</scope>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.11.0</version>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-      <dependency>
-          <groupId>io.qameta.allure</groupId>
-          <artifactId>allure-testng</artifactId>
-          <version>2.31.0</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.31.0</version>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
-      <dependency>
-          <groupId>org.assertj</groupId>
-          <artifactId>assertj-core</artifactId>
-          <version>3.27.6</version>
-          <scope>test</scope>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.6</version>
+            <scope>test</scope>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-      <dependency>
-          <groupId>com.google.code.gson</groupId>
-          <artifactId>gson</artifactId>
-          <version>2.13.2</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.13.2</version>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-      <dependency>
-          <groupId>com.fasterxml.jackson.core</groupId>
-          <artifactId>jackson-databind</artifactId>
-          <version>2.20.1</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.20.1</version>
+        </dependency>
 
-      <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
-      <dependency>
-          <groupId>jakarta.annotation</groupId>
-          <artifactId>jakarta.annotation-api</artifactId>
-          <version>3.0.0</version>
-      </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.annotation/jakarta.annotation-api -->
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
 
-  </dependencies>
+    </dependencies>
+
+    <profiles>
+
+        <profile>
+            <id>AI</id>
+            <properties>
+                <suiteXmlFile>testng_ai.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>AlwaysRun</id>
+            <properties>
+                <suiteXmlFile>testng_AlwaysRun.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>APITesting09_Non_BDD_Style</id>
+            <properties>
+                <suiteXmlFile>testng_APITesting09_Non_BDD_Style.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Enabled</id>
+            <properties>
+                <suiteXmlFile>testng_Enabled.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Groups_P1</id>
+            <properties>
+                <suiteXmlFile>testng_Groups_P1.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Groups_Regression</id>
+            <properties>
+                <suiteXmlFile>testng_Groups_Regression.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Groups_Sanity</id>
+            <properties>
+                <suiteXmlFile>testng_Groups_Sanity.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Manual</id>
+            <properties>
+                <suiteXmlFile>testng_manual.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+
+        <profile>
+            <id>Parameter_Chrome</id>
+            <properties>
+                <suiteXmlFile>testng_Parameter_Chrome.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Parameter_Firefox</id>
+            <properties>
+                <suiteXmlFile>testng_Parameter_Firefox.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Plugin</id>
+            <properties>
+                <suiteXmlFile>testng_plugin.xml</suiteXmlFile>
+            </properties>
+        </profile>
+
+    </profiles>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.5</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
