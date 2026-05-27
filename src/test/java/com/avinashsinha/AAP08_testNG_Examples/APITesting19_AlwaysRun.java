@@ -26,4 +26,5 @@ public class APITesting19_AlwaysRun {
     public void test03() {
         Assert.assertTrue(true);
     }
+
 }
