@@ -1,81 +1,94 @@
-# API Automation Programs 🚀  
+# 🚀 API Automation Programs
 
-![Java](https://img.shields.io/badge/Java-11%2B-blue?logo=openjdk)
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-IDE-000000?logo=intellijidea&logoColor=white)
+> A collection of **API Automation Programs** built using **Java**, **Rest Assured**, **TestNG**, **Maven**, **Allure Reports**, **Gson**, and **Jackson** to learn REST API automation concepts from basic to advanced.
+
+<p align="center">
+
+![Java](https://img.shields.io/badge/Java-11+-blue?logo=openjdk)
 ![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white)
-![Rest Assured](https://img.shields.io/badge/Rest%20Assured-API%20Testing-green)
-![TestNG](https://img.shields.io/badge/TestNG-Framework-FF6C37?logo=testng&logoColor=white)
-![Allure](https://img.shields.io/badge/Allure-Reports-purple)
-![Apache POI](https://img.shields.io/badge/Apache%20POI-Excel%20Integration-yellow)
-![Gson](https://img.shields.io/badge/Gson-JSON%20Parser-lightgrey?logo=google)
-![Jackson](https://img.shields.io/badge/Jackson-JSON%20Parser-blue)
+![RestAssured](https://img.shields.io/badge/RestAssured-API--Testing-yellowgreen)
+![TestNG](https://img.shields.io/badge/TestNG-Framework-brightgreen)
+![AssertJ](https://img.shields.io/badge/AssertJ-Assertions-orange)
+![Apache POI](https://img.shields.io/badge/Apache%20POI-Excel%20Support-blue)
+![Gson](https://img.shields.io/badge/Gson-JSON-lightgrey)
+![Jackson](https://img.shields.io/badge/Jackson-JSON-blue)
+![Allure](https://img.shields.io/badge/Allure-Reports-ff69b4)
+
+</p>
 
 ---
 
-## 🗂️ Overview  
+# 🗂️ Overview
 
-This repository contains **API automation programs** designed to help you learn and master **REST API testing with Rest Assured** in **Java**.  
+This repository contains a collection of **API Automation Programs** developed using **Java**, **Rest Assured**, **TestNG**, and **Maven**.
 
-It demonstrates how to structure test automation projects using **TestNG**, generate reports with **Allure**, and implement **data-driven testing** with **Apache POI (Excel)**.  
+The project is designed as a **learning repository** that gradually introduces REST API automation concepts—from basic request creation to advanced topics such as payload management, assertions, TestNG features, reporting, and JSON serialization.
 
----
-
-## 🛠️ Technologies Used  
-
-| Technology        | Purpose                                              |
-|-------------------|------------------------------------------------------|
-| **Java**          |	Core programming language for automation             |
-| **IntelliJ IDEA**	| Integrated Development Environment (IDE)             |
-| **Maven**	        | Build automation, dependency, and project management |
-| **Rest Assured**	| API testing and validation framework                 |
-| **TestNG**	      | Test execution, assertions, and test management      |
-| **Allure**	      | Test reporting and result visualisation              |
-| **Apache POI**	  | Data-driven testing with Excel files                 |
-| **Gson**	        | JSON parsing and object serialisation                |
-| **Jackson**	      | JSON parsing, data binding, and serialisation        |
+It serves as a practical reference for anyone learning API automation using **Rest Assured**.
 
 ---
 
-## 📚 Lessons Covered  
+# ✨ Topics Covered
 
-- ✅ Basics of **Rest Assured**  
-- 📡 Performing **CRUD operations**:  
-  - **`GET`** → Retrieve resources  
-  - **`POST`** → Create new resources  
-  - **`PUT`** → Update existing resources  
-  - **`PATCH`** → Partial update of resources  
-  - **`DELETE`** → Remove resources  
-- 🧪 Integrating with **TestNG** for test structuring  
-- 📊 Generating detailed test reports using **Allure**  
-- 📂 Implementing **Data-Driven Testing** with **Apache POI**  
-- 🔄 Working with **JSON serialization/deserialization** using **Gson** & **Jackson**  
+- ✅ Rest Assured Basics
+- ✅ GET, POST, PUT, PATCH & DELETE Requests
+- ✅ BDD & Non-BDD Style API Testing
+- ✅ TestNG Fundamentals
+- ✅ TestNG Groups & Parameters
+- ✅ TestNG Annotations
+- ✅ Assertions (Rest Assured, TestNG & AssertJ)
+- ✅ Payload Management
+- ✅ Builder Design Pattern
+- ✅ POJO Serialization & Deserialization
+- ✅ Gson & Jackson
+- ✅ Allure Reporting
 
 ---
 
-## 🏗️ Project Structure  
+# 🛠️ Tech Stack
 
-```bash
+| Technology | Usage |
+|------------|-------|
+| Java 11+ | Programming Language |
+| Maven | Dependency & Build Management |
+| Rest Assured | API Automation |
+| TestNG | Test Framework |
+| AssertJ | Fluent Assertions |
+| Apache POI | Excel Data Handling |
+| Gson | JSON Serialization |
+| Jackson | JSON Data Binding |
+| Allure Reports | Test Reporting |
+| IntelliJ IDEA | Development IDE |
+
+---
+
+# 🏗️ Project Structure
+
+```text
 API_Automation_Programs/
 │
 ├── .idea/                                                                  # IntelliJ project files
 ├── .mvn/                                                                   # Maven wrapper files
-├── allure-report/                                                          # Allure Report HTML (generated)
-├── allure-results/                                                         # Allure results (JSON, attachments, etc.)
+├── allure-report/                                                          # Generated Allure report
+├── allure-results/                                                         # Allure execution results
+│
+├── pom.xml                                                                 # Maven dependencies & build configuration
+├── .gitignore
 │
 ├── src/
 │   ├── main/
-│   │   └── java/com.avinashsinha/                                          
+│   │   └── java/
 │   │
 │   └── test/
 │       └── java/com.avinashsinha/
 │           │
-│           ├── AAP01_RA_Basics/                                            # Rest-Assured Basics
+│           ├── AAP01_RA_Basics/                                            # Rest Assured Basics
 │           │   ├── APITesting01.java
 │           │   ├── APITesting02.java
 │           │   ├── APITesting03_BuilderDesignPattern.java
 │           │   └── APITesting04_Multiple_TestCases_Problem.java
 │           │
-│           ├── AAP02_RA_TestNG_AllureReport/                               # Rest-Assured + TestNG + Allure
+│           ├── AAP02_RA_TestNG_AllureReport/                               # Rest Assured + TestNG + Allure
 │           │   └── APITesting04_Multiple_TestCases_Fix.java
 │           │
 │           ├── AAP03_GET_Request/                                          # GET Request Examples
@@ -96,7 +109,7 @@ API_Automation_Programs/
 │           ├── AAP07_DELETE_Request/                                       # DELETE Request Examples
 │           │   └── APITesting12_Non_BDD_Style.java
 │           │
-│           ├── AAP08_testNG_Examples/                                      # TestNG Concepts
+│           ├── AAP08_TestNG_Examples/                                      # TestNG Concepts
 │           │   ├── APITesting13_AnnotationWithoutPriority.java
 │           │   ├── APITesting14_AnnotationWithPriority.java
 │           │   ├── APITesting15_Groups.java
@@ -104,22 +117,18 @@ API_Automation_Programs/
 │           │   ├── APITesting17_Parameter.java
 │           │   ├── APITesting18_Enabled.java
 │           │   ├── APITesting19_AlwaysRun.java
-│           │   └── APITesting20_InvocationCount.java
+│           │   ├── APITesting20_InvocationCount.java
 │           │   ├── APITesting21_All_Annotations_1.java
 │           │   └── APITesting22_All_Annotations_2.java
 │           │
-│           ├── AAP09_Assertions/                                           # Assertions
+│           ├── AAP09_Assertions/                                           # Assertion Examples
 │           │   ├── APITesting23_RestAssured_Assertions.java
 │           │   ├── APITesting24_TestNG_Assertions.java
 │           │   ├── APITesting25_AssertJ_Assertions.java
 │           │   └── APITesting26_All_Assertions.java
 │           │
-│           ├── AAP10_PayloadManagement/                                    # Payload Using Map
+│           ├── AAP10_PayloadManagement/                                    # Map Payload
 │           │   └── APITesting27_Payload_Map.java
-│           │
-│           ├── AAP10_PayloadManagement.ByAl_03/                            # POJO Payload (Approach 3)
-│           │   ├── Booking.java
-│           │   └── BookingDates.java
 │           │
 │           ├── AAP10_PayloadManagement.ByManual_01/                        # POJO Payload (Approach 1)
 │           │   ├── Booking.java
@@ -129,19 +138,23 @@ API_Automation_Programs/
 │           │   ├── Booking.java
 │           │   └── BookingDates.java
 │           │
-│           ├── AAP10_PayloadManagement.Gson/                               # Payload with Gson
+│           ├── AAP10_PayloadManagement.ByAI_03/                            # POJO Payload (Approach 3)
+│           │   ├── Booking.java
+│           │   └── BookingDates.java
+│           │
+│           ├── AAP10_PayloadManagement.Gson/                               # Gson Payload Management
 │           │   ├── APITesting28_Gson.java
 │           │   ├── Booking.java
 │           │   ├── BookingDates.java
 │           │   └── BookingResponse.java
 │           │
-│           └── AAP10_PayloadManagement.Jackson/                            # Payload with Jackson
+│           └── AAP10_PayloadManagement.Jackson/                            # Jackson Payload Management
 │               ├── APITesting29_Jackson.java
 │               ├── Booking.java
 │               ├── BookingDates.java
 │               └── BookingResponse.java
 │
-├── testng_*.xml                                                            # All TestNG Suite files
+├── testng_*.xml                                                            # TestNG Suite Files
 │   ├── testng_ai.xml
 │   ├── testng_AlwaysRun.xml
 │   ├── testng_APITesting09_Non_BDD_Style.xml
@@ -154,33 +167,65 @@ API_Automation_Programs/
 │   ├── testng_Parameter_Firefox.xml
 │   └── testng_plugin.xml
 │
-├── pom.xml                                                                 # Maven dependencies
-├── .gitignore
-│
 └── README.md
-
 ```
+
 ---
-## 📊 Sample Allure Report
 
-Here’s an example of an Allure test report generated from this project:
+# 📚 Learning Modules
 
-#### ✅ You can generate your own reports after running tests using:
+| Module | Concepts Covered |
+|----------|------------------|
+| **AAP01** | Rest Assured Basics |
+| **AAP02** | TestNG + Allure Integration |
+| **AAP03** | GET Requests |
+| **AAP04** | POST Requests |
+| **AAP05** | PUT Requests |
+| **AAP06** | PATCH Requests |
+| **AAP07** | DELETE Requests |
+| **AAP08** | TestNG Features |
+| **AAP09** | Assertions (Rest Assured, TestNG & AssertJ) |
+| **AAP10** | Payload Management (Map, POJO, Gson & Jackson) |
+
+---
+
+# ▶️ Running Tests
+
+Execute any TestNG suite using Maven.
+
+### Example
+
+```bash
+mvn clean test -DsuiteXmlFile=testng_plugin.xml
+```
+
+---
+
+# 📊 Allure Reports
+
+Generate the report using:
 
 ```bash
 mvn clean test
 mvn allure:serve
 ```
 
-<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/3a0cabbf-2998-41a5-b275-1c9f65dab3bb" />
+<p align="center">
+<img width="1100" src="https://github.com/user-attachments/assets/3a0cabbf-2998-41a5-b275-1c9f65dab3bb" alt="Allure Report">
+</p>
+
+The command launches an interactive Allure dashboard in your default browser.
 
 ---
 
-## 📌 Author
+# 👨‍💻 Author
 
-👤 Avinash Sinha
+**Avinash Sinha**
+
+If you found this repository helpful, consider giving it a ⭐ on GitHub.
 
 ---
-📝 This repository is created exclusively for **educational and practice use**.
 
----
+# 📄 License
+
+This project is intended for **educational** and **learning purposes**.
